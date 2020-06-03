@@ -1,0 +1,48 @@
+==13333== Memcheck, a memory error detector
+==13333== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==13333== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==13333== Command: ./3
+==13333== Parent PID: 13332
+==13333== 
+==13333== Conditional jump or move depends on uninitialised value(s)
+==13333==    at 0x4E988DA: vfprintf (vfprintf.c:1642)
+==13333==    by 0x4EA0F25: printf (printf.c:33)
+==13333==    by 0x108CAF: printdata (in /home/pvips-guest/c_training/git_ass_9/question3/3)
+==13333==    by 0x108A0C: main (in /home/pvips-guest/c_training/git_ass_9/question3/3)
+==13333== 
+==13333== Use of uninitialised value of size 8
+==13333==    at 0x4E9486B: _itoa_word (_itoa.c:179)
+==13333==    by 0x4E97F0D: vfprintf (vfprintf.c:1642)
+==13333==    by 0x4EA0F25: printf (printf.c:33)
+==13333==    by 0x108CAF: printdata (in /home/pvips-guest/c_training/git_ass_9/question3/3)
+==13333==    by 0x108A0C: main (in /home/pvips-guest/c_training/git_ass_9/question3/3)
+==13333== 
+==13333== Conditional jump or move depends on uninitialised value(s)
+==13333==    at 0x4E94875: _itoa_word (_itoa.c:179)
+==13333==    by 0x4E97F0D: vfprintf (vfprintf.c:1642)
+==13333==    by 0x4EA0F25: printf (printf.c:33)
+==13333==    by 0x108CAF: printdata (in /home/pvips-guest/c_training/git_ass_9/question3/3)
+==13333==    by 0x108A0C: main (in /home/pvips-guest/c_training/git_ass_9/question3/3)
+==13333== 
+==13333== Conditional jump or move depends on uninitialised value(s)
+==13333==    at 0x4E98014: vfprintf (vfprintf.c:1642)
+==13333==    by 0x4EA0F25: printf (printf.c:33)
+==13333==    by 0x108CAF: printdata (in /home/pvips-guest/c_training/git_ass_9/question3/3)
+==13333==    by 0x108A0C: main (in /home/pvips-guest/c_training/git_ass_9/question3/3)
+==13333== 
+==13333== Conditional jump or move depends on uninitialised value(s)
+==13333==    at 0x4E98B4C: vfprintf (vfprintf.c:1642)
+==13333==    by 0x4EA0F25: printf (printf.c:33)
+==13333==    by 0x108CAF: printdata (in /home/pvips-guest/c_training/git_ass_9/question3/3)
+==13333==    by 0x108A0C: main (in /home/pvips-guest/c_training/git_ass_9/question3/3)
+==13333== 
+==13333== 
+==13333== HEAP SUMMARY:
+==13333==     in use at exit: 0 bytes in 0 blocks
+==13333==   total heap usage: 2 allocs, 2 frees, 2,048 bytes allocated
+==13333== 
+==13333== All heap blocks were freed -- no leaks are possible
+==13333== 
+==13333== For counts of detected and suppressed errors, rerun with: -v
+==13333== Use --track-origins=yes to see where uninitialised values come from
+==13333== ERROR SUMMARY: 5 errors from 5 contexts (suppressed: 0 from 0)
